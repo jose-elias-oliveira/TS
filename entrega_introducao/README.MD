@@ -3,8 +3,6 @@
 ## PRIMEIRA ENTREGA
 ### Diretórios dessa entrega
 * src/
-> Diretório de source do projeto
-* src/
   * main/
     * app/
       * Aplicacao.js
