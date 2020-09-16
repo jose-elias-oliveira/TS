@@ -4,7 +4,9 @@ import java.util.InputMismatchException;
 public class CPF{
 
 public boolean  VerificaCPF(String cpf){
-    
+
+    //Remove  os char especiais
+    cpf=RemoveCharCPF(cpf);
     //Remove os resultados que são claramente falsos antes de fazer o calculo para poupar tempo
     if (cpf.equals("00000000000") ||
         cpf.equals("11111111111") ||  
@@ -74,6 +76,18 @@ public boolean  VerificaCPF(String cpf){
         }
 
 
+}
+public String RemoveCharCPF(String cpf){
+
+return cpf.replace(".","").replace("-","");
+
+}
+
+public String FormataCPF(String cpf){
+
+    return (cpf.substring(0, 3) + "." + cpf.substring(3, 6) + "." +
+    cpf.substring(6, 9) + "-" + cpf.substring(9, 11));
+    
 }
 
 }
