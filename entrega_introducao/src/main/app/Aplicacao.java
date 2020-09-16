@@ -6,7 +6,7 @@ public class Aplicacao{
         
        CPF cpf=new CPF();
 
-       String test1="11111111111";
+       String test1="68741539001";
     
        System.out.println("TESTE 01 - CPF:"+test1+"\n======================================");
 
@@ -21,7 +21,7 @@ public class Aplicacao{
         
 
 
-        String test2="46325456242";
+        String test2="47488652886";
     
         System.out.println("TESTE 02 - CPF:"+test2+"\n======================================");
  
